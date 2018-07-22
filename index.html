@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendaftaran HTML CSS MODIF</title>
+	<meta charset='utf-8'>
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="pendaftaran_css_modif_dom.css">
+</head>
+<body >
+	<center>
+		<form>	
+		<table class="tabel">
+			<tr class="warna">
+				<td style="padding-top: 10px;padding-bottom: 10px;"><img src="Logo Bazar.JPG"></td>
+				<td colspan="2" class="judul spasi">FORMULIR PENDAFTARAN STAND BAZAR TANGERANG</td>
+			</tr>
+			<tr>
+				<td colspan="2"><br></td>
+			</tr>
+			<tr>
+				<td>Nama Peserta</td>
+				<td><input id="nama" type="text" maxlength="30" 
+				placeholder="Nama" onkeyup="uppertext(this.value)" oninput="validasiteks(this.value)"required autofocus></input></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td><textarea rows="3" placeholder="Alamat" maxlength="255"></textarea></td>
+			</tr>
+			<tr>
+				<td>Telp / HP</td>
+				<td><input id="notelp" type="text" maxlength="12" 
+				placeholder="No Telepon" oninput="validasiangka(this.value)" required></input></td>
+			</tr>
+			<tr>
+				<td>Produk yang ditawarkan</td>
+				<td><input type="text" 
+				placeholder="Mohon ditulis dengan detil" required></input></td>
+			</tr>
+			<tr>
+				<td>Jenis Stand</td>
+				<td>
+				<select name="stand">
+					<option value="1">Listrik</option>
+					<option value="2">Non Listrik</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Tanggal Pembuatan</td>
+				<td><input type="date" id="tanggal" 
+				placeholder="DD/MM/YYYY" value="2016-12-22" required></input></td>
+			</tr>
+			<tr align="right">
+				<td colspan="2"><button type="reset">Reset</button>&nbsp;<button type="submit">Submit</button></td>		
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p>Catatan: 
+					<i>Peserta Bazar tidak boleh memilih/mengatur tempat, yang mengatur penempatan bazar adalah
+					koordinator dari sekolah. Terimakasih.
+					</i>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</form>
+</center>
+</body>
+	<script type="text/javascript" src='pendaftaran_css_modif_dom.js'></script>
+</html>
